@@ -4,11 +4,11 @@ A binary text classifier that detects depression-related social media posts usin
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Social media posts can carry signals of mental health struggles. This project builds and compares three ML classifiers on a labelled Reddit dataset to detect depression-related language — with a focus on **recall**, since missing a positive case carries higher risk than a false alarm.
 
-> ⚠️ **Disclaimer:** This project is for educational and research purposes only. It is not intended for clinical use or diagnosis.
+> **Disclaimer:** This project is for educational and research purposes only. It is not intended for clinical use or diagnosis.
 
 ---
 
@@ -21,7 +21,7 @@ Social media posts can carry signals of mental health struggles. This project bu
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -34,7 +34,7 @@ Social media posts can carry signals of mental health struggles. This project bu
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 depression-text-classifier/
@@ -47,7 +47,7 @@ depression-text-classifier/
 
 ---
 
-## ⚙️ Models Compared
+## Models Compared
 
 | Model | Type | Notes |
 |-------|------|-------|
@@ -57,7 +57,7 @@ depression-text-classifier/
 
 ---
 
-## 🔄 Pipeline
+## Pipeline
 
 1. **Preprocessing** — Lowercase, remove URLs & punctuation, strip stopwords
 2. **TF-IDF Vectorization** — Unigrams + bigrams, 20K features, fit on train only
@@ -67,7 +67,7 @@ depression-text-classifier/
 
 ---
 
-## 📈 Visualizations Produced
+## Visualizations Produced
 
 - Confusion matrices (raw + normalized) for all three models
 - Model comparison bar chart across all metrics
@@ -76,7 +76,7 @@ depression-text-classifier/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Option 1 — Google Colab (Recommended)
 1. Upload `depression_detection.ipynb` to [Google Colab](https://colab.research.google.com/)
@@ -93,7 +93,7 @@ python depression_detection_ml.py
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ```
 datasets
@@ -112,13 +112,13 @@ pip install -r requirements.txt
 
 ---
 
-## 📐 Evaluation Focus
+## Evaluation Focus
 
 > **Recall** is the primary metric. A false negative (missing a depressed post) is considered more harmful than a false positive in this context. Model selection and tuning decisions prioritize recall for the positive class.
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Fine-tuned transformer models (DistilBERT, RoBERTa) for higher performance
 - Cross-dataset generalization evaluation
